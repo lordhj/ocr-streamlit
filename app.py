@@ -16,7 +16,7 @@ def read_text(name):
     # pytesseract path
     config = ('-l eng --oem 1 --psm 3')
 
-    pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR/tesseract.exe"
+    pytesseract.pytesseract.tesseract_cmd = "module/Tesseract-OCR/tesseract.exe"
     text = pytesseract.image_to_string(img, config=config)
     # print results
     text = text.split('\n')
